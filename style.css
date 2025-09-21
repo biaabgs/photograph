@@ -1,0 +1,151 @@
+:root {
+  --azul_muito_escuro: #1e1e2a;
+  --azul_escuro: #24273A;
+  --azul_claro: #90Adc1;
+  --azul: #4d749e;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.navbar-brand {
+  font-family: "Ledger", serif;
+  color: white;
+}
+
+.navbar-nav a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.navbar-nav a:hover,
+.navbar-brand:hover {
+  text-shadow: 1px 1px 4px #f5f5f5;
+  color: white;
+}
+
+button.navbar-toggler {
+  border-color: var(--azul_muito_escuro);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem var(--azul_muito_escuro);
+}
+
+
+.navbar-toggler-icon {
+  filter: invert();
+}
+
+.navbar-nav .nav-link.active {
+  text-shadow: 1px 1px 10px #f5f5f573;
+  color: white;
+}
+
+.navbar.navbar-expand-lg{
+  background-color: var(--azul_escuro);
+}
+
+.btn.btn-primary {
+  background-color: var(--azul_escuro);
+  border: 0px;
+}
+
+/* Aplica bordas arredondadas só em telas extralargas */
+@media (min-width: 575px) {
+  .navbar {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden; 
+  }
+  #carouselExampleAutoplaying {
+    max-width: 1320px; 
+    margin: 0 auto; 
+    border-radius: 5px; 
+    overflow: hidden; 
+  } 
+}
+
+section {
+    margin-top: 10px;
+  }
+  
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* garante que o body ocupe a altura da tela */
+}
+
+main {
+  flex: 1; /* ocupa o espaço disponível e empurra o footer */
+}
+
+section{
+    margin-top: 10px;
+}
+
+.container.cont h5{
+    font-family: "Ledger", serif;
+    font-size: 3rem;
+    color: var(--azul_escuro);
+    font-weight: bold;
+}
+
+/* Fotografia */
+section.fotografia {
+    padding: 4vw 4%;
+    /* background-color: purple; */
+    margin-top: 3vw;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.fotos1, .fotos2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    border: solid 2px #f2e8e1;
+}
+
+.fotos1 img {
+    max-width: 332px;
+    max-height: 332px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.fotos1 img:hover, .fotos2 img:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.fotos2 img{
+    width: 500px;
+    height: 375px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.container_fotografia{
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.fotografia h1{
+    font-family: "DM Serif Text", serif;
+    font-size: 3.5em;
+    margin-bottom: 1vw;
+    color: #553d2a;
+    margin-top: 1vw;
+}
