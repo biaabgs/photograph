@@ -1,4 +1,5 @@
 :root {
+  --preto-azulado: #101016;
   --azul_muito_escuro: #1e1e2a;
   --azul_escuro: #24273A;
   --azul_claro: #90Adc1;
@@ -12,6 +13,7 @@ body {
 .navbar-brand {
   font-family: "Ledger", serif;
   color: white;
+  font-size: 1.5rem;
 }
 
 .navbar-nav a {
@@ -21,7 +23,7 @@ body {
 
 .navbar-nav a:hover,
 .navbar-brand:hover {
-  text-shadow: 1px 1px 4px #f5f5f5;
+  text-shadow: 1px 1px 10px #f5f5f573;
   color: white;
 }
 
@@ -33,7 +35,6 @@ button.navbar-toggler {
     outline: none;
     box-shadow: 0 0 0 0.2rem var(--azul_muito_escuro);
 }
-
 
 .navbar-toggler-icon {
   filter: invert();
@@ -49,23 +50,8 @@ button.navbar-toggler {
 }
 
 .btn.btn-primary {
-  background-color: var(--azul_escuro);
+  background-color: transparent;
   border: 0px;
-}
-
-/* Aplica bordas arredondadas só em telas extralargas */
-@media (min-width: 575px) {
-  .navbar {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden; 
-  }
-  #carouselExampleAutoplaying {
-    max-width: 1320px; 
-    margin: 0 auto; 
-    border-radius: 5px; 
-    overflow: hidden; 
-  } 
 }
 
 section {
@@ -148,4 +134,26 @@ section.fotografia {
     margin-bottom: 1vw;
     color: #553d2a;
     margin-top: 1vw;
+}
+
+.nav-link.btn-primary{
+    width: 95px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--azul_muito_escuro);
+    background-color: var(--azul_escuro);
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar.navbar-expand-lg.casamento {
+  background-color: var(--preto-azulado);
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color: white;
+  border-radius: 47%;
 }
