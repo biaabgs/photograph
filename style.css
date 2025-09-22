@@ -153,7 +153,22 @@ section.fotografia {
   background-color: var(--preto-azulado);
 }
 
-.carousel-indicators [data-bs-target]{
-  background-color: white;
-  border-radius: 47%;
+.banner {
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url(fotos/casamento/banner.jpg);
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que a imagem cubra toda a largura do banner, mantendo a proporção */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4em;
+    font-family: "Tangerine", cursive;
+    margin: 0;
 }
