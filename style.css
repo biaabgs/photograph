@@ -154,21 +154,41 @@ section.fotografia {
 }
 
 .banner {
+    height: 66vw;
+    width: 100%;
+    align-items: center;
     margin-top: 0px;
-    height: 100vh;
-    background-image: url(fotos/casamento/banner.jpg);
-    background-position: center; /* Centraliza a imagem no banner */
-    background-repeat: no-repeat;
     background-size: cover; /* Garante que a imagem cubra toda a largura do banner, mantendo a proporção */
     display: flex;
-    align-items: center;
+    position:absolute;
     justify-content: center;
-    position: relative;
 }
 
 .banner h1 {
+    z-index: 2;
+    position:relative;
     color: white;
     font-size: 4em;
     font-family: "Tangerine", cursive;
     margin: 0;
 }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px; /* altura base das linhas */
+  gap: 10px; /* espaço entre imagens */
+}
+
+.grid-layout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* primeira imagem ocupa 2 linhas */
+.item1 {
+  grid-row: span 2;
+}
+
