@@ -1,171 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photograph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Serif+Text:ital@0;1&family=Ledger&family=Montserrat:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Photograph</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Serif+Text:ital@0;1&family=Ledger&family=Montserrat:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">BG</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="casamento.html">Casamento</a>
-          <a class="nav-link" href="esportivas.html">Esportivas</a>
-          <a class="nav-link" href="teatro.html">Teatro</a>
-          <a class="nav-link btn-primary" href="catalogo.html">Contato</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="fotos/home/IMG_9858.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/home/IMG_9858.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="fotos/home/IMG_9858.jpg" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card mb-3 text-center">
-              <img src="fotos/IMG_6855.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Casamentos</h5>
-                <a href="#" class="btn btn-primary">Orçamento</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 text-center">
-              <img src="fotos/IMG_6855.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Esportivas</h5>
-                <a href="#" class="btn btn-primary">Ver mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card mb-3 text-center">
-              <img src="fotos/IMG_6855.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Igreja</h5>
-                <a href="igreja.html" class="btn btn-primary">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 text-center">
-              <img src="fotos/IMG_6855.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Infantil</h5>
-                <a href="#" class="btn btn-primary">Orçamento</a>
-              </div>
-            </div>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="casamento.html">Casamento</a>
+            <a class="nav-link" href="esportivas.html">Esportivas</a>
+            <a class="nav-link" href="teatro.html">Igreja</a>
+            <a class="nav-link" href="#contato">Contato</a>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section>
-      <!--MAIS ACESSADOS-->
-      <div class="container cont">
-        <div class="col">
+    <main>
+      <div class="container-fluid p-0">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="fotos/home/IMG_9858.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/home/img13.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/home/img4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
           <div class="row">
-            <h5 class="card-title text-center mt-5">
-              Categorias
-            </h5>
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="fotos/teatro.png" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="img/colarestreladomar.png" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="fotos/crianca.png" class="d-block w-100" alt="..." />
+            <div class="col">
+              <div class="card mb-3 text-center">
+                <img src="fotos/home/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Casamentos</h5>
+                  <a href="#contato" class="btn btn-primary">Orçamento</a>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="col">
+              <div class="card mb-3 text-center">
+                <img
+                  src="fotos/home/4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Esportivas</h5>
+                  <a href="esportivas.html" class="btn btn-primary">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3 text-center">
+                <img src="fotos/home/1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Igreja</h5>
+                  <a href="teatro.html" class="btn btn-primary">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3 text-center">
+                <img src="fotos/home/3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Infantil</h5>
+                  <a href="#contato" class="btn btn-primary">Orçamento</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <!--MAIS ACESSADOS-->
+        <div class="container cont">
+          <div class="col">
+            <div class="row">
+              <h5 class="card-title text-center mt-5">Categorias</h5>
+              <div id="carouselExample" class="carousel slide mt-3">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="casamento.html">
+                      <img
+                        src="fotos/home/casamento.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="esportivas.html">
+                      <img
+                        src="fotos/home/esportiva.png"
+                        class="d-block w-100"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="esportivas.html">
+                      <img
+                        src="fotos/home/igreja.png"
+                        class="d-block w-100"
+                        alt="..."
+                    /></a>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Entre em Contato</h2>
+          <div class="row">
+            <!-- Formulário -->
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="seuemail@email.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    rows="4"
+                    placeholder="Digite sua mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h5 class="mb-3 mt-4">Informações</h5>
+              <p><strong>Email:</strong> contato@photograph.com</p>
+              <p><strong>WhatsApp:</strong> (11) 99999-9999</p>
+              <p><strong>Redes Sociais:</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); 
+        const modal = new bootstrap.Modal(
+          document.getElementById("mensagemEnviada")
+        );
+        modal.show(); /* abre o modal */
+        this.reset(); /* limpa o formulário */
+      });
+    </script>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="igreja.html" class="nav-link px-2 text-body-secondary"
+              >Igreja</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="esportivas.html" class="nav-link px-2 text-body-secondary"
+              >Esportivas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Casamento</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          © 2025 Beatriz Gonçalves. Todos os direitos reservados
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <!-- Modal de Sucesso -->
+    <div
+      class="modal fade"
+      id="mensagemEnviada"
+      tabindex="-1"
+      aria-labelledby="mensagemEnviadaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mensagemEnviadaLabel">
+              Mensagem Enviada!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Sua mensagem foi enviada com sucesso. Em breve entraremos em
+              contato.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="igreja.html" class="nav-link px-2 text-body-secondary">Igreja</a>
-        </li>
-        <li class="nav-item">
-          <a href="esportivas.html" class="nav-link px-2 text-body-secondary">Esportivas</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Casamento</a>
-        </li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2025 Beatriz Gonçalves. Todos os direitos reservados</p>
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
-
+    </div>
+  </body>
 </html>
